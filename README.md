@@ -151,3 +151,90 @@ for model in models:
 def visualize_som_umatrix(...):
     # Cartographie des similarités entre cas médicaux
     # Identification de clusters pathologiques
+
+```python
+Dataset: dataset1
+Classes: ['pneumonia', 'normal']
+Class distribution: {'pneumonia': 3875, 'normal': 1341}
+Sample image sizes: [(1048, 736), (984, 672), (992, 712), (1224, 888), (864, 480)]
+--------------------------------------------------
+
+Comparing statistics across all datasets:
+Un seul dataset valide (dataset1), pas de comparaison nécessaire.
+Exploration summary saved to exploration_summary.csv
+
+Step 1: Data Exploration
+Dataset: dataset1
+Classes: ['pneumonia', 'normal']
+Class distribution: {'pneumonia': 3875, 'normal': 1341}
+Sample image sizes: [(1048, 736), (984, 672), (992, 712), (1224, 888), (864, 480)]
+--------------------------------------------------
+
+Step 2: Data Preprocessing
+Dataset: (5216, 150, 150) images, 2 classes
+
+Step 3: Feature Extraction
+Original dimensions: (5216, 22500)
+PCA dimensions: (5216, 1405)
+Explained variance ratio: 0.9500
+
+Step 4: Traditional ML Models with Simple Train-Test Split
+Model: Logistic Regression
+Accuracy: 0.9521
+Precision: 0.9527
+Recall: 0.9521
+F1 Score: 0.9523
+ROC AUC: 0.9886
+--------------------------------------------------
+Model: SVM
+Accuracy: 0.9761
+Precision: 0.9760
+Recall: 0.9761
+F1 Score: 0.9760
+ROC AUC: 0.9957
+--------------------------------------------------
+Model: Random Forest
+Accuracy: 0.8372
+Precision: 0.8462
+Recall: 0.8372
+F1 Score: 0.8142
+ROC AUC: 0.9523
+--------------------------------------------------
+Model: Gradient Boosting
+Accuracy: 0.9444
+Precision: 0.9443
+Recall: 0.9444
+F1 Score: 0.9433
+ROC AUC: 0.9836
+--------------------------------------------------
+Model: Neural Network
+Accuracy: 0.9550
+Precision: 0.9547
+Recall: 0.9550
+F1 Score: 0.9548
+ROC AUC: 0.9904
+--------------------------------------------------
+
+Step 5: Cross-Validation Evaluation
+Model: Logistic Regression
+Mean Accuracy: 0.9515
+Std Accuracy: 0.0044
+--------------------------------------------------
+Model: SVM
+Mean Accuracy: 0.9707
+Std Accuracy: 0.0040
+--------------------------------------------------
+Model: Random Forest
+Mean Accuracy: 0.8315
+Std Accuracy: 0.0112
+--------------------------------------------------
+Model: Gradient Boosting
+Mean Accuracy: 0.9379
+Std Accuracy: 0.0067
+--------------------------------------------------
+Model: Neural Network
+Mean Accuracy: 0.9519
+Std Accuracy: 0.0090
+--------------------------------------------------
+
+Step 6: Parameter Tuning
