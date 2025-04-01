@@ -138,22 +138,6 @@ for model in models:
 ## 📊 Résultats Clés
 ### Performances des Modèles Modèle Accuracy Temps d'Exécution Régression Logistique
 
-95.21%
-
-2.1s SVM
-
-97.61%
-
-18.4s Random Forest
-
-83.72%
-
-4.8s CNN
-
-94.50%
-
-2min34s
-
 ### Visualisations
 ````python
 def visualize_som_umatrix(...):
