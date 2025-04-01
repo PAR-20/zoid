@@ -97,7 +97,7 @@ def preprocess_images(...):
 ```
 
 ### 2. Extraction de Caractéristiques
-# Approche Traditionnelle
+### Approche Traditionnelle
 
 def extract_features(images):
     # Calcul d'histogrammes de textures
@@ -111,9 +111,9 @@ Approche Deep Learning :
 def create_cnn_model(...):
 ```
 
-  # Architecture CNN avec 3 couches convolutionnelles
-  # MaxPooling pour réduire la dimension spatiale
-  # Couche Dense finale avec activation sigmoïde
+### Architecture CNN avec 3 couches convolutionnelles
+### MaxPooling pour réduire la dimension spatiale
+### Couche Dense finale avec activation sigmoïde
 
 ### 3. Entraînement des Modèles
 Modèles Testés :
