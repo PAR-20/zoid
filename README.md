@@ -74,7 +74,7 @@ The model's predictions are based on patterns found in thousands of historical X
 3. **Validation Scientifique** : Comparer différentes approches d'IA pour la tâche médicale
 
 ## 📂 Structure des Données
-```plaintext
+```text
 dataset1/
 ├── normal/
 │   ├── im1.png
