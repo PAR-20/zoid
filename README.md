@@ -106,7 +106,7 @@ Finally, I'll make sure the language is accessible for beginners, explaining tec
 # Projet de Classification d'Images Médicales
 ```
 <img src="results/accuracy_comparison.png" alt="Comparaison des performances" width="800">
-```
+
 
 ## 🎯 Objectifs du Projet
 1. **Détection Automatique de Pneumonie** : Analyser des radiographies pulmonaires pour identifier les cas de pneumonie
@@ -172,7 +172,7 @@ Validation Croisée :
 kf = KFold(n_splits=5, shuffle=True)
 for model in models:
     scores = cross_val_score(model, X, y, cv=kf)
-```
+
 
 ## 📊 Résultats Clés
 ### Performances des Modèles Modèle Accuracy Temps d'Exécution Régression Logistique
