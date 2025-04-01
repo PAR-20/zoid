@@ -111,7 +111,7 @@ def extract_features(images):
 Approche Deep Learning :
 
 
-```
+```python
 def create_cnn_model(...):
 ```
 
@@ -130,7 +130,7 @@ Modèles Testés :
 - CNN (Réseau de Neurones Convolutif)
 Validation Croisée :
 
-````
+````python
 kf = KFold(n_splits=5, shuffle=True)
 for model in models:
     scores = cross_val_score(model, X, y, cv=kf)
@@ -157,7 +157,7 @@ for model in models:
 2min34s
 
 ### Visualisations
-````
+````python
 def visualize_som_umatrix(...):
     # Cartographie des similarités entre cas médicaux
     # Identification de clusters pathologiques
