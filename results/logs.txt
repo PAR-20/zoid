@@ -73,3 +73,13 @@ Model: Random Forest
 Mean Accuracy: 0.8315
 Std Accuracy: 0.0112
 --------------------------------------------------
+Model: Gradient Boosting
+Mean Accuracy: 0.9379
+Std Accuracy: 0.0067
+--------------------------------------------------
+Model: Neural Network
+Mean Accuracy: 0.9519
+Std Accuracy: 0.0090
+--------------------------------------------------
+
+Step 6: Parameter Tuning

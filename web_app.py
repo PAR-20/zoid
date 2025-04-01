@@ -37,7 +37,7 @@ HTML_TEMPLATE = '''
         <input type="file" name="image" accept="image/*" required>
         <button type="submit">Analyser</button>
     </form>
-    
+
     {% if result %}
     <div class="result-box">
         <h2>Résultats :</h2>
@@ -53,16 +53,16 @@ HTML_TEMPLATE = '''
 def create_3d_plot(confidence):
     fig = plt.figure(figsize=(8, 6))
     ax = fig.add_subplot(111, projection='3d')
-    
+
     theta = np.linspace(0, 2*np.pi, 100)
     z = np.linspace(0, confidence, 100)
     theta, z = np.meshgrid(theta, z)
     x = z * np.cos(theta)
     y = z * np.sin(theta)
-    
+
     ax.plot_surface(x, y, z, cmap='viridis', alpha=0.8)
     ax.set_zlim(0, 1)
-    
+
     buf = io.BytesIO()
     plt.savefig(buf, format='png')
     plt.close()
@@ -74,31 +74,29 @@ def upload_file():
     if request.method == 'POST':
         if 'image' not in request.files:
             return 'Aucun fichier sélectionné'
-        
+
         file = request.files['image']
         if file.filename == '':
             return 'Aucun fichier sélectionné'
 
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
         file.save(filepath)
-        
-        # Preprocess and extract features
+
         processed_img = preprocess_images([filepath])
-        
-        # Feature extraction pipeline (same as training)
+
         n_samples = len(processed_img)
         flat_img = processed_img.reshape(n_samples, -1)
         scaled_img = scaler.transform(flat_img)
         pca_features = pca.transform(scaled_img)
 
         probability = model.predict_proba(pca_features)[0][1]
-        
+
         result = {
             'prediction': 'PNEUMONIE' if probability > 0.5 else 'NORMAL',
             'confidence': f"{probability*100:.2f}",
             'plot_url': create_3d_plot(probability)
         }
-    
+
     return render_template_string(HTML_TEMPLATE, result=result)
 
 if __name__ == '__main__':
