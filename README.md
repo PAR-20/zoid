@@ -136,7 +136,7 @@ for model in models:
 
 
 ## 📊 Résultats Clés
-### Performances des Modèles Modèle Accuracy Temps d'Exécution Régression Logistique
+<img src="results/accuracy_comparison.png" alt="Comparaison des performances" width="800">
 
 ### Visualisations
 ````python
