@@ -107,6 +107,7 @@ Finally, I'll make sure the language is accessible for beginners, explaining tec
 ```
 <img src="results/accuracy_comparison.png" alt="Comparaison des performances" width="800">
 ```
+
 ## 🎯 Objectifs du Projet
 1. **Détection Automatique de Pneumonie** : Analyser des radiographies pulmonaires pour identifier les cas de pneumonie
 2. **Classification Binaire** : Distinguer les images "Normales" vs "Pneumonie"
@@ -130,7 +131,7 @@ dataset1/
 
 ### 1. Préprocessing des Images
 
-```
+
 def preprocess_images(...):
     # Conversion en niveaux de gris
     # Redimensionnement 150x150 pixels
