@@ -37,7 +37,7 @@ Thought process
 The system uses special math patterns (called "machine learning models") to analyze X-ray images. Here's a simple explanation of what's happening:
 
 1. **Image Preparation** (Like Organizing X-Rays):
-   - Convert images to black & white numbers
+   - Convert images to black & white, numbers
    - Enhance contrast to see details better
    - Standardize sizes to 150x150 pixels
 
@@ -66,7 +66,6 @@ This addition explains the technical aspects in simple terms while:
 2. Explaining Logistic Regression as a decision boundary
 3. Connecting the technical process to real-world diagnosis
 4. Maintaining visual appeal with emojis and spacing
-Would you like me to add any other specific explanations or adjust the language?
 
 ## DALM1
 
