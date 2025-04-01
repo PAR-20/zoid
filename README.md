@@ -141,6 +141,7 @@ Validation Croisée :
 kf = KFold(n_splits=5, shuffle=True)
 for model in models:
     scores = cross_val_score(model, X, y, cv=kf)
+````
 
 
 ## 📊 Résultats Clés
