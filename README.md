@@ -58,8 +58,7 @@ Imagine drawing a line through a scatter plot - our model constantly adjusts thi
 
 🩺 **Medical Connection**:
 The model's predictions are based on patterns found in thousands of historical X-rays, learning to recognize what pneumonia typically looks like compared to healthy lungs.
- ```
-```
+
 
 This addition explains the technical aspects in simple terms while:
 
