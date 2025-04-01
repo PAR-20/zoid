@@ -28,7 +28,6 @@ def preprocess_images(...):
     # Application de CLAHE (Contrast Limited Adaptive Histogram Equalization)
     # Normalisation des valeurs de pixels [0-1]
 
-    ## Trae AI
 Thought process
 
 I'll help update the README.md with a beginner-friendly explanation of the regression aspects in your project. Here's the addition:
@@ -103,11 +102,11 @@ I should also add installation instructions, mentioning the requirements.txt fil
 
 Finally, I'll make sure the language is accessible for beginners, explaining technical terms in simple terms, and using emojis or icons to make sections visually distinct. I'll link to the dataset and provide references for further reading to add credibility and resources for users who want to explore more.
 
-```markdown
+
 # Projet de Classification d'Images Médicales
-
+```
 <img src="results/accuracy_comparison.png" alt="Comparaison des performances" width="800">
-
+```
 ## 🎯 Objectifs du Projet
 1. **Détection Automatique de Pneumonie** : Analyser des radiographies pulmonaires pour identifier les cas de pneumonie
 2. **Classification Binaire** : Distinguer les images "Normales" vs "Pneumonie"
@@ -198,4 +197,3 @@ for model in models:
 def visualize_som_umatrix(...):
     # Cartographie des similarités entre cas médicaux
     # Identification de clusters pathologiques
-```
