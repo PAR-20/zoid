@@ -86,13 +86,11 @@ dataset1/
 └── ... (3875 images)
  ```
 
-```plaintext
-
 ## 🔧 Méthodologie Technique
 
 ### 1. Préprocessing des Images
 
-
+```python
 def preprocess_images(...):
     # Conversion en niveaux de gris
     # Redimensionnement 150x150 pixels
