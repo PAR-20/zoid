@@ -153,6 +153,8 @@ def visualize_som_umatrix(...):
     # Identification de clusters pathologiques
 ```
 
+## LOGS
+
 ```python
 Dataset: dataset1
 Classes: ['pneumonia', 'normal']
