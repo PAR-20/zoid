@@ -29,10 +29,8 @@ def preprocess_images(...):
     # Normalisation des valeurs de pixels [0-1]
 
 Thought process
+````
 
-I'll help update the README.md with a beginner-friendly explanation of the regression aspects in your project. Here's the addition:
-
-```markdown
 ## 🔍 For Beginners: Understanding the Medical Image Analysis
 
 ### 🤖 How the Computer "Learns" to Diagnose
