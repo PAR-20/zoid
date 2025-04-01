@@ -159,3 +159,30 @@ def plot_confusion_matrix(y_true, y_pred, classes):
     plt.title('Confusion Matrix')
     plt.tight_layout()
     plt.show()
+
+def plot_accuracy_comparison(results):
+    """Plot accuracy comparison between models"""
+    model_names = list(results.keys())
+    accuracies = [results[name]['accuracy'] for name in model_names]
+    
+    plt.figure(figsize=(12, 6))
+    bars = plt.bar(model_names, accuracies, color='skyblue')
+    
+    # Add accuracy values on top of bars
+    for bar, acc in zip(bars, accuracies):
+        plt.text(bar.get_x() + bar.get_width()/2, 
+                 bar.get_height() + 0.01, 
+                 f'{acc:.4f}', 
+                 ha='center', va='bottom', 
+                 fontweight='bold')
+    
+    plt.title('Model Accuracy Comparison', fontsize=15)
+    plt.ylabel('Accuracy', fontsize=12)
+    plt.ylim(0, 1.1)  # Set y-axis limit to accommodate text
+    plt.xticks(rotation=45)
+    plt.grid(axis='y', linestyle='--', alpha=0.7)
+    plt.tight_layout()
+    
+    # Save the figure
+    plt.savefig('/Users/dalm1/Desktop/reroll/Progra/par20/results/accuracy_comparison.png')
+    plt.show()

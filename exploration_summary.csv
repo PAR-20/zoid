@@ -1,0 +1,2 @@
+Dataset,Total Images,Number of Classes,Classes,Class Distribution
+dataset1,5216,2,"pneumonia, normal","{'pneumonia': 3875, 'normal': 1341}"
