@@ -137,6 +137,8 @@ for model in models:
 
 
 ## 📊 Résultats Clés
+
+## MODEL LOSS
 <img src="https://github.com/PAR-20/zoid/blob/main/visualisation/model_loss.png?raw=true" alt="Comparaison des performances" width="800">
 
 ## U-MATRIX
