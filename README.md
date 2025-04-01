@@ -29,8 +29,7 @@ def preprocess_images(...):
     # Normalisation des valeurs de pixels [0-1]
 
 Thought process
-````
-
+```
 ## 🔍 For Beginners: Understanding the Medical Image Analysis
 
 ### 🤖 How the Computer "Learns" to Diagnose
@@ -74,7 +73,7 @@ Would you like me to add any other specific explanations or adjust the language?
 
 
 # Projet de Classification d'Images Médicales
-```
+
 <img src="results/accuracy_comparison.png" alt="Comparaison des performances" width="800">
 
 
