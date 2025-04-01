@@ -58,8 +58,9 @@ Imagine drawing a line through a scatter plot - our model constantly adjusts thi
 
 🩺 **Medical Connection**:
 The model's predictions are based on patterns found in thousands of historical X-rays, learning to recognize what pneumonia typically looks like compared to healthy lungs.
-
-## DALM1
+🔍 **Understanding the Model**:
+- The model's accuracy is like knowing how well it can predict pneumonia cases.
+- The time it takes to process an image is like how long it takes a doctor to diagnose a patient.
 
 
 # Projet de Classification d'Images Médicales
