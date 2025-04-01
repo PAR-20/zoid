@@ -73,34 +73,6 @@ This addition explains the technical aspects in simple terms while:
 Would you like me to add any other specific explanations or adjust the language?
 
 ## DALM1
-Copy
-
-Delete
-
-README.md tu peux me faire un papier qui detaille exactement les etapes utilisé pour faire les recursions ect detaille le projet les but en entier ect
-
-## Trae AI
-Thought process
-
-README.md
-
-README.md 5-5
-
-Okay, the user wants me to update their README.md file to detail the entire project, including the steps, goals, and technical aspects like recursions. Let me start by looking at the current README they provided, which is very minimal—just a title and an image.
-
-First, I need to structure the README properly. Common sections include Project Overview, Features, Installation, Usage, Results, and Conclusion. Since the user mentioned explaining recursions and detailed steps, I should include a section on methodology or approach where I can elaborate on the algorithms and processes used.
-
-Looking at the code snippets provided earlier, the project involves data exploration, preprocessing, model training (including traditional ML and deep learning), and visualization. I should break down each of these steps. The user also mentioned regression, so I need to explain how logistic regression fits into their classification task, maybe clarifying that it's used for binary classification here.
-
-I should mention the datasets used, like the chest X-ray dataset from Hugging Face, and the techniques applied, such as CLAHE for image preprocessing, SVM, Random Forest, and CNN models. Including details about handling class imbalance and using SOM for visualization would add depth.
-
-For the recursion part, I need to check if there's any recursive code in their project. From the provided code snippets, I don't see explicit recursion. Maybe the user is referring to iterative processes or cross-validation steps. I should clarify that or ensure that any mention of recursion is accurate based on their code.
-
-I'll structure the README with sections in both French and English to cater to different readers, given the user's mix of French and English in prompts. Including visual elements like the accuracy comparison chart and SOM visualizations will make it more engaging.
-
-I should also add installation instructions, mentioning the requirements.txt file, and usage steps to guide users on how to run the project. Including results and conclusions will highlight the project's outcomes, like the SVM model's high accuracy.
-
-Finally, I'll make sure the language is accessible for beginners, explaining technical terms in simple terms, and using emojis or icons to make sections visually distinct. I'll link to the dataset and provide references for further reading to add credibility and resources for users who want to explore more.
 
 
 # Projet de Classification d'Images Médicales
