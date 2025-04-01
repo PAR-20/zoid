@@ -1,4 +1,7 @@
 # Zoidberg
+
+<img src="https://github.com/PAR-20/zoid/blob/main/visualisation/sample_images.png?raw=true" alt="Comparaison des performances" width="800">
+
 ## 📊 Résultats des Comparaisons
 Les résultats de la comparaison des performances des modèles d'apprentissage automatique sont présentés dans le graphique ci-dessous.
 
@@ -135,6 +138,10 @@ for model in models:
 
 ## 📊 Résultats Clés
 <img src="https://github.com/PAR-20/zoid/blob/main/visualisation/model_loss.png?raw=true" alt="Comparaison des performances" width="800">
+
+<img src="https://github.com/PAR-20/zoid/blob/main/visualisation/u-matrix.png?raw=true" alt="Comparaison des performances" width="800">
+
+
 
 ### Visualisations
 ````python
