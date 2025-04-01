@@ -75,8 +75,6 @@ The model's predictions are based on patterns found in thousands of historical X
 
 ## 📂 Structure des Données
  ```
-
-
 dataset1/
 ├── normal/
 │   ├── im1.png
