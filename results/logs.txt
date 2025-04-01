@@ -96,6 +96,8 @@ Step 7: Deep Learning Models
 372ms/step - accuracy: 0.7989 - loss: 0.3922 - val_accuracy: 0.8587 - val_loss: 0.3435 - learning_rate: 0.0010
 30ms/step - accuracy: 0.8208 - loss: 0.3372WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
 368ms/step - accuracy: 0.8459 - loss: 0.3241 - val_accuracy: 0.8060 - val_loss: 0.4041 - learning_rate: 0.0010
+...
+
  - val_loss: 0.1766 - learning_rate: 0.0010
 CNN Test Accuracy: 0.9425
 WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
