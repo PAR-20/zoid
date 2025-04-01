@@ -83,3 +83,29 @@ Std Accuracy: 0.0090
 --------------------------------------------------
 
 Step 6: Parameter Tuning
+Best parameters: {'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}
+Best cross-validation score: 0.9730
+Model saved to results/best_traditional_model.pkl
+
+Step 7: Deep Learning Models
+/.pyenv/versions/3.10.12/lib/python3.10/site-packages/keras/src/layers/convolutional/base_conv.py:107: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(activity_regularizer=activity_regularizer, **kwargs)
+/.pyenv/versions/3.10.12/lib/python3.10/site-packages/keras/src/trainers/data_adapters/py_dataset_adapter.py:121: UserWarning: Your `PyDataset` class should call `super().__init__(**kwargs)` in its constructor. `**kwargs` can include `workers`, `use_multiprocessing`, `max_queue_size`. Do not pass these arguments to `fit()`, as they will be ignored.
+  self._warn_if_super_not_called()
+
+372ms/step - accuracy: 0.7989 - loss: 0.3922 - val_accuracy: 0.8587 - val_loss: 0.3435 - learning_rate: 0.0010
+30ms/step - accuracy: 0.8208 - loss: 0.3372WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+368ms/step - accuracy: 0.8459 - loss: 0.3241 - val_accuracy: 0.8060 - val_loss: 0.4041 - learning_rate: 0.0010
+ - val_loss: 0.1766 - learning_rate: 0.0010
+CNN Test Accuracy: 0.9425
+WARNING:absl:You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`.
+
+Step 8: SOM Visualization
+
+Step 9: Results Comparison
+
+Step 10: Save Results Summary
+
+Results saved to 'results' directory
+
+Analysis Complete
