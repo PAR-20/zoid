@@ -59,14 +59,6 @@ Imagine drawing a line through a scatter plot - our model constantly adjusts thi
 🩺 **Medical Connection**:
 The model's predictions are based on patterns found in thousands of historical X-rays, learning to recognize what pneumonia typically looks like compared to healthy lungs.
 
-
-This addition explains the technical aspects in simple terms while:
-
-1. Using medical analogies beginners can relate to
-2. Explaining Logistic Regression as a decision boundary
-3. Connecting the technical process to real-world diagnosis
-4. Maintaining visual appeal with emojis and spacing
-
 ## DALM1
 
 
