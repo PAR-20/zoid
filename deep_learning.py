@@ -22,14 +22,14 @@ def create_cnn_model(input_shape=(150, 150, 1), num_classes=2):
         Dropout(0.5),
         Dense(num_classes if num_classes > 2 else 1, activation='softmax' if num_classes > 2 else 'sigmoid')
     ])
-    
+
     # Compile model
     model.compile(
         optimizer='adam',
         loss='sparse_categorical_crossentropy' if num_classes > 2 else 'binary_crossentropy',
         metrics=['accuracy']
     )
-    
+
     return model
 
 def create_transfer_learning_model(base_model_name='vgg16', input_shape=(150, 150, 3), num_classes=2):
@@ -41,11 +41,11 @@ def create_transfer_learning_model(base_model_name='vgg16', input_shape=(150, 15
         base_model = ResNet50(weights='imagenet', include_top=False, input_shape=input_shape)
     else:
         raise ValueError("Unsupported base model")
-    
+
     # Freeze base model layers
     for layer in base_model.layers:
         layer.trainable = False
-    
+
     # Add custom layers
     inputs = Input(shape=input_shape)
     x = base_model(inputs, training=False)
@@ -53,16 +53,16 @@ def create_transfer_learning_model(base_model_name='vgg16', input_shape=(150, 15
     x = Dense(256, activation='relu')(x)
     x = Dropout(0.5)(x)
     outputs = Dense(num_classes, activation='softmax' if num_classes > 2 else 'sigmoid')(x)
-    
+
     model = Model(inputs, outputs)
-    
+
     # Compile model
     model.compile(
         optimizer='adam',
         loss='sparse_categorical_crossentropy' if num_classes > 2 else 'binary_crossentropy',
         metrics=['accuracy']
     )
-    
+
     return model
 
 def train_model_with_data_augmentation(model, X_train, y_train, X_val, y_val, batch_size=32, epochs=50, data_aug=True):
@@ -73,7 +73,7 @@ def train_model_with_data_augmentation(model, X_train, y_train, X_val, y_val, ba
         ReduceLROnPlateau(factor=0.1, patience=5),
         ModelCheckpoint('best_model.h5', save_best_only=True)
     ]
-    
+
     if data_aug:
         # Data augmentation
         datagen = ImageDataGenerator(
@@ -85,7 +85,7 @@ def train_model_with_data_augmentation(model, X_train, y_train, X_val, y_val, ba
             horizontal_flip=True,
             fill_mode='nearest'
         )
-        
+
         # Train with data augmentation
         datagen.fit(X_train)
         history = model.fit(
@@ -103,13 +103,13 @@ def train_model_with_data_augmentation(model, X_train, y_train, X_val, y_val, ba
             epochs=epochs,
             callbacks=callbacks
         )
-    
+
     return model, history
 
 def plot_training_history(history):
     """Plot training history"""
     plt.figure(figsize=(12, 5))
-    
+
     # Plot accuracy
     plt.subplot(1, 2, 1)
     plt.plot(history.history['accuracy'])
@@ -118,7 +118,7 @@ def plot_training_history(history):
     plt.ylabel('Accuracy')
     plt.xlabel('Epoch')
     plt.legend(['Train', 'Validation'], loc='upper left')
-    
+
     # Plot loss
     plt.subplot(1, 2, 2)
     plt.plot(history.history['loss'])
@@ -127,6 +127,6 @@ def plot_training_history(history):
     plt.ylabel('Loss')
     plt.xlabel('Epoch')
     plt.legend(['Train', 'Validation'], loc='upper left')
-    
+
     plt.tight_layout()
     plt.show()

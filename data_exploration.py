@@ -7,7 +7,7 @@ import os
 from PIL import Image
 import cv2
 
-# Création des répertoires de datasets
+# ajouter les chemins de vos datasets ci dessous la team par20
 dataset_paths = [
     '/Users/dalm1/Desktop/reroll/Progra/par20/dataset1',
 ]
@@ -285,7 +285,6 @@ def save_exploration_summary(dataset_paths, output_file='/Users/dalm1/Desktop/re
 save_exploration_summary(dataset_paths)
 
 if __name__ == "__main__":
-    # Option pour télécharger un dataset depuis Hugging Face
     download_from_huggingface = input("Voulez-vous télécharger un dataset depuis Hugging Face? (oui/non): ").lower() == 'oui'
 
     if download_from_huggingface:
@@ -293,7 +292,6 @@ if __name__ == "__main__":
         downloaded_path = download_dataset_from_huggingface(dataset_name)
 
         if downloaded_path:
-            # Ajouter le dataset téléchargé à la liste des datasets à explorer
             dataset_paths.append(downloaded_path)
 
     # Explore each dataset individually
@@ -304,7 +302,6 @@ if __name__ == "__main__":
     print("\nComparing statistics across all datasets:")
     analyze_dataset_statistics(dataset_paths)
 
-    # exploration summary
     save_exploration_summary(dataset_paths)
 
     print("Data exploration complete!")
