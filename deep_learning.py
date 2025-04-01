@@ -20,7 +20,7 @@ def create_cnn_model(input_shape=(150, 150, 1), num_classes=2):
         Flatten(),
         Dense(128, activation='relu'),
         Dropout(0.5),
-        Dense(num_classes, activation='softmax' if num_classes > 2 else 'sigmoid')
+        Dense(num_classes if num_classes > 2 else 1, activation='softmax' if num_classes > 2 else 'sigmoid')
     ])
     
     # Compile model
