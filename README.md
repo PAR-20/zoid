@@ -147,10 +147,11 @@ for model in models:
 
 
 ### Visualisations
-````python
+```python
 def visualize_som_umatrix(...):
     # Cartographie des similarités entre cas médicaux
     # Identification de clusters pathologiques
+```
 
 ```python
 Dataset: dataset1
