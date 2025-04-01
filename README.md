@@ -115,7 +115,7 @@ Finally, I'll make sure the language is accessible for beginners, explaining tec
 
 ## 📂 Structure des Données
  ```
-```
+
 
 dataset1/
 ├── normal/
@@ -124,6 +124,7 @@ dataset1/
 └── pneumonia/
 ├── im3875.png
 └── ... (3875 images)
+ ```
 
 ```plaintext
 
